@@ -1,6 +1,6 @@
 public class NameEncoderDecoder {
     String name;
-    public String encod(String name){
+    public String encode(String name){
         String name1 = name.replace("e", "1").
                 replace("u", "2").
                 replace("i", "3").
@@ -9,7 +9,7 @@ public class NameEncoderDecoder {
         return "NOTFORYOU" + name1 + "YESNOTFORYOU";
     }
 
-    public String decod(String name){
+    public String decode(String name){
         String name1 = name.replace("1", "e").
                 replace("2", "u").
                 replace("3", "i").
